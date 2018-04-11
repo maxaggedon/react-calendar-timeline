@@ -491,7 +491,7 @@ export default class Item extends Component {
     const timelineContext = this.context.getTimelineContext()
     const Comp = this.props.itemRenderer
     if (Comp) {
-      return <Comp item={this.props.item} timelineContext={timelineContext} />
+      return <Comp item={this.props.item} timelineContext={timelineContext} selected={this.props.selected} />
     } else {
       return this.itemTitle
     }
